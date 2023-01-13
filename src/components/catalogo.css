@@ -4,35 +4,12 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-header {
-    padding: 80px;
-    background-color: gray;
-    margin-bottom: 70px;
-}
-header > img{
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%);
-    top: 20px;
-}
-.facebook, .instagram, .whats {
-    max-width: 32px;
-    border-radius: 100%;
-    top: 125px;
-    left: 10%;
-    transform: translate(-50%);
-}
-.facebook {
-    left: 22%;
-}
-.whats {
-    left: 34%;
-}
+
 .div1 {
     position: relative;
     height: 180px;
 }
-img {
+.img {
     max-width: 133px;
     border-radius: 7px 7px 0px 0px;
     top: -10px;
@@ -84,7 +61,13 @@ hr {
     margin-top: 30px;
     margin-bottom: 40px;
 }
-
+.main{
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 @media screen and (min-width: 375px ) {
     .h1Nome {
@@ -100,7 +83,7 @@ hr {
 }
 @media screen and (min-width: 425px ) {
     .pReferencia {
-        left: 350px;
+        left: calc(100% - 60px);
         font-size: .75rem;
     }
     .h1Nome {
@@ -127,12 +110,5 @@ hr {
         left: 90%;
         font-size: .75rem;
     }
-    .main {
-        display: block;
-        min-width: 768px;
-        max-width: 800px;
-        margin: auto;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+
 }

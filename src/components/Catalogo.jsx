@@ -9,7 +9,7 @@ function Catalogo({nome, referencia, img, desc, phref, det}) {
                     <div className="div2">
                         <h1 className="h1Nome">{nome}</h1>
                         <p className="pDesc">{desc}</p>
-                        <img src={img} alt=""  className="img"/>
+                        <img src={img} alt="Imagens"  className="img"/>
                         <a href={phref} className="pDet">{det}</a>
                         <p className="pReferencia">{referencia}</p>
                     </div>

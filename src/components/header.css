@@ -1,0 +1,42 @@
+header {
+    padding: 60px;
+    background-color: gray;
+}
+nav {
+    margin-bottom: 70px;
+    background-color: gray;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+input {
+    float: right;
+}
+.imagem{
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    top: 40px;
+    max-width: 133px;
+    border-radius: 7px 7px 0px 0px;
+
+    position: absolute;
+} 
+ .facebook, .instagram, .whats, .maps {
+    max-width: 32px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 800px ) {
+    nav {
+        left: -1px;
+    }
+}
