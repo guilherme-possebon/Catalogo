@@ -5,14 +5,14 @@ import "./catalogo2.css"
 
 
 
-import n2 from "/2-removebg-preview.png"
-import n3 from "/3-removebg-preview.png"
-import n4 from "/4-removebg-preview.png"
-import n5 from "/5-removebg-preview.png"
-import n6 from "/6-removebg-preview.png"
-import n7 from "/7-removebg-preview.png"
-import n8 from "/8-removebg-preview.png"
-import logo from "/Logo_Majo-removebg-preview.png"
+import n2 from "/2.png"
+import n3 from "/3.png"
+import n4 from "/4.png"
+import n5 from "/5.png"
+import n6 from "/6.png"
+import n7 from "/7.png"
+import n8 from "/8.png"
+import logo from "/Logo_Majo.png"
 
 
 
@@ -51,7 +51,7 @@ export function CatalagoRow({img1, img2, img3, phref, det}) {
             <div className="col">
                 <img src={img3} alt=""  className="img img3"/>
                 <p className="pDet"><a href={phref}>{det}</a></p>
-                
+
             </div>
         </div>
     )
