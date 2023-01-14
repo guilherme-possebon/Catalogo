@@ -2,7 +2,7 @@ import "./header.css"
 import face from "/logo-facebook.jpg"
 import insta from "/logo-instagram.jpg"
 import whats from "/whats.png"
-import logo from "/Logo Majo.png"
+import logo from "/Logo_Majo.png"
 import map from "/maps.png"
 
 export function Header() {
