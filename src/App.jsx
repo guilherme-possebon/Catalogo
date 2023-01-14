@@ -1,6 +1,5 @@
-import Catalogo from "./components/Catalogo"
-import './appCss.css'
-import Header from "./components/Header"
+import {Catalogo} from "./components/Catalogo"
+import {Header} from "./components/Header"
 
 function App() {
 
@@ -9,7 +8,6 @@ function App() {
       <Header />
 
       <Catalogo nome="Blusa Térmica Feminina" referencia="959, 959-1" desc='Malha pettenati. Disponivel nos tamanhos: P ao G2' />
-      
     </div>
   )
 }

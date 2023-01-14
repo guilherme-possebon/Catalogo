@@ -5,7 +5,7 @@ import whats from "/whats.png"
 import logo from "/Logo Majo.png"
 import map from "/maps.png"
 
-function Header() {
+export function Header() {
     return (
             <div>
                 <header>
@@ -28,5 +28,3 @@ function Header() {
             </div>
     )
 }
-
-export default Header
