@@ -6,8 +6,8 @@ nav {
     margin-bottom: 70px;
     background-color: gray;
 }
-.container {
-    max-width: 800px;
+.headerContainer {
+    max-width: 1100px;
     margin: auto;
 }
 ul {
