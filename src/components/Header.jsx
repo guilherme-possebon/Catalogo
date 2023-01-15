@@ -14,7 +14,7 @@ export function Header() {
                 </header>
                 <nav>
                     <div className="headerContainer">
-                        <ul>
+                        <ul className="ul">
                             <li><a href="https://pt-br.facebook.com/majoconfeccoes.com.br" target="blank_" ><img src={face} alt="" className="facebook" /></a></li>
                             <li><a href="https://www.instagram.com/majo_confeccoes/" target="blank_" ><img src={insta} alt="" className="instagram" /></a></li>
                             <li><a href="https://wa.me/5199126623" target="blank_" className="whatsa"><img src={whats} alt="" className="whats" /></a></li>

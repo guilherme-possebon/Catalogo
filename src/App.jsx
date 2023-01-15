@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <Header />
 
-      <Catalogo nome="Blusa Térmica Feminina" referencia="959, 959-1" desc='Malha pettenati. Disponivel nos tamanhos: P ao G2' />
-      <Catalogo2 nome="Pasta A" referencia="959, 959-1" desc='Descrição da pasta a' />
-      <Catalogo3 nome="Pasta b" referencia="959, 959-1" desc='Descrição da pasta b' />
+      <Catalogo nome="Blusa Térmica Feminina" referencia="959, 959-1" desc='Malha Pettenati. Disponivel nos tamanhos: P ao G2' />
+      <Catalogo2 nome="Lingerie" referencia="921" />
+      <Catalogo3 nome="Lingerie" referencia="968"/>
     </div>
   )
 }

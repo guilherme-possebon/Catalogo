@@ -49,12 +49,13 @@ export function Catalogo({nome, referencia, desc,}) {
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
-                <CatalogoRow img={n4}/>
-                <CatalogoRow img={n3}/>
-                <CatalogoRow img={n5}/>
-                <CatalogoRow img={n6}/>
-                <CatalogoRow img={n7}/>
-                <CatalogoRow img={n8}/>
+                <CatalogoRow img={n2} cor={"Manga rosa"}/>
+                <CatalogoRow img={n4} cor={"Rosa"}/>
+                <CatalogoRow img={n3} cor={"Azul-bebê"}/>
+                <CatalogoRow img={n5} cor={"Preto"}/>
+                <CatalogoRow img={n6} cor={"Bordô"}/>
+                <CatalogoRow img={n7} cor={"Marrom"}/>
+                <CatalogoRow img={n8} cor={"Marinho"}/>
             </div>
         </div>
     )
@@ -67,24 +68,28 @@ export function Catalogo2({nome, referencia, desc,}) {
         <div className="container">
 
             <h1 className="h1Nome">{nome}</h1>
-            <p className="pDesc">{desc}</p>
+            <ul>
+                <li>Conjuntos em mircrofibra, 90% poliamida e 10% elastano;</li>
+                <li>Opções: Liso, meia renda, e renda;</li>
+                <li>Disponiveis nos tamanhos: P, M, G, GG.</li>
+            </ul>
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
-                <CatalogoRow img={pa1} />
-                <CatalogoRow img={pa2} />
-                <CatalogoRow img={pa3} />
-                <CatalogoRow img={pa4} />
-                <CatalogoRow img={pa5} />
-                <CatalogoRow img={pa6} />
-                <CatalogoRow img={pa7} />
-                <CatalogoRow img={pa8} />
-                <CatalogoRow img={pa9} />
-                <CatalogoRow img={pa10} />
-                <CatalogoRow img={pa11} />
-                <CatalogoRow img={pa12} />
-                <CatalogoRow img={pa13} />
-                <CatalogoRow img={pa14} />
+                <CatalogoRow img={pa2} cor={"Pantera (Meia renda)"} />
+                <CatalogoRow img={pa3} cor={"Pantera (Liso)"} />
+                <CatalogoRow img={pa10} cor={"Pantera (Renda)"} />
+                <CatalogoRow img={pa4} cor={"Romance (Liso)"} />
+                <CatalogoRow img={pa6} cor={"Romance (Renda)"} />
+                <CatalogoRow img={pa5} cor={"Sanremo (Liso)"} />
+                <CatalogoRow img={pa11} cor={"Sanremo (Renda)"} />
+                <CatalogoRow img={pa7} cor={"Branco (Liso)"} />
+                <CatalogoRow img={pa12} cor={"Branco (Renda)"} />
+                <CatalogoRow img={pa8} cor={"Chocolate (Renda)"} />
+                <CatalogoRow img={pa9} cor={"Rubi (Liso)"} />
+                <CatalogoRow img={pa13} cor={"Sandia (Renda)"} />
+                <CatalogoRow img={pa14} cor={"Preto (Renda)"} />
+                <CatalogoRow img={pa1} cor={"Fantástico (Renda)"} />
             </div>
         </div>
     )
@@ -97,29 +102,34 @@ export function Catalogo3({nome, referencia, desc,}) {
         <div className="container">
 
             <h1 className="h1Nome">{nome}</h1>
-            <p className="pDesc">{desc}</p>
+            <ul>
+                <li>Conjuntos em mircrofibra, 90% poliamida e 10% elastano;</li>
+                <li>Opções: Liso, meia renda, e renda;</li>
+                <li>Disponiveis nos tamanhos: M, G, GG.</li>
+            </ul>
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
-                <CatalogoRow img={pb1} />
-                <CatalogoRow img={pb2} />
-                <CatalogoRow img={pb3} />
-                <CatalogoRow img={pb4} />
-                <CatalogoRow img={pb5} />
-                <CatalogoRow img={pb6} />
-                <CatalogoRow img={pb7} />
-                <CatalogoRow img={pb8} />
-                <CatalogoRow img={pb9} />
+                <CatalogoRow img={pb6} cor={"Sandia (Renda)"} />
+                <CatalogoRow img={pb2} cor={"Sandia (Liso)"} />
+                <CatalogoRow img={pb5} cor={"Fantástico (Liso)"} />
+                <CatalogoRow img={pb8} cor={"Fantástico (Renda)"} />
+                <CatalogoRow img={pb7} cor={"Romance (Liso)"} />
+                <CatalogoRow img={pb9} cor={"Romance (Renda)"} />
+                <CatalogoRow img={pb1} cor={"Preto (Liso)"} />
+                <CatalogoRow img={pb3} cor={"Chocolate (Liso)"} />
+                <CatalogoRow img={pb4} cor={"Pantera (Liso)"} />
             </div>
         </div>
     )
 }
-export function CatalogoRow({img, img2, img3, img4}) {
+export function CatalogoRow({img, img2, img3, img4,cor}) {
 
     return (
         <div className="row">
             <div className="col">
                 <img src={img} alt="" className="img" />
+                <p className="pCor">{cor}</p>
              </div>
         </div>
     )
