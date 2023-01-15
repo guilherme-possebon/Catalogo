@@ -20,6 +20,12 @@ import pa7 from "/PastaA7.jpeg"
 import pa8 from "/PastaA8.jpeg"
 import pa9 from "/PastaA9.jpeg"
 import pa10 from "/PastaA10.jpeg"
+import pa11 from "/PastaA11.jpeg"
+import pa12 from "/PastaA12.jpeg"
+import pa13 from "/PastaA13.jpeg"
+import pa14 from "/PastaA14.jpeg"
+
+
 import pb1 from "/PastaB1.jpeg"
 import pb2 from "/PastaB2.jpeg"
 import pb3 from "/PastaB3.jpeg"
@@ -27,12 +33,12 @@ import pb4 from "/PastaB4.jpeg"
 import pb5 from "/PastaB5.jpeg"
 import pb6 from "/PastaB6.jpeg"
 import pb7 from "/PastaB7.jpeg"
+import pb8 from "/PastaB8.jpeg"
+import pb9 from "/PastaB9.jpeg"
 
-
-
-import logo from "/Logo_Majo.png"
-
-
+//-----------------------------------------------------
+// Blusas femininas
+//-----------------------------------------------------
 
 export function Catalogo({nome, referencia, desc,}) {
     return (
@@ -43,16 +49,19 @@ export function Catalogo({nome, referencia, desc,}) {
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
-                <CatalogoRow2 img={n4}/>
-                <CatalogoRow2 img={n3}/>
-                <CatalogoRow2 img={n5}/>
-                <CatalogoRow2 img={n6}/>
-                <CatalogoRow2 img={n7}/>
-                <CatalogoRow2 img={n8}/>
+                <CatalogoRow img={n4}/>
+                <CatalogoRow img={n3}/>
+                <CatalogoRow img={n5}/>
+                <CatalogoRow img={n6}/>
+                <CatalogoRow img={n7}/>
+                <CatalogoRow img={n8}/>
             </div>
         </div>
     )
 }
+//-----------------------------------------------------
+// Conjunto Normal
+//-----------------------------------------------------
 export function Catalogo2({nome, referencia, desc,}) {
     return (
         <div className="container">
@@ -62,20 +71,27 @@ export function Catalogo2({nome, referencia, desc,}) {
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
-                <CatalogoRow2 img={pa1} />
-                <CatalogoRow2 img={pa2} />
-                <CatalogoRow2 img={pa3} />
-                <CatalogoRow2 img={pa4} />
-                <CatalogoRow2 img={pa5} />
-                <CatalogoRow2 img={pa6} />
-                <CatalogoRow2 img={pa7} />
-                <CatalogoRow2 img={pa8} />
-                <CatalogoRow2 img={pa9} />
-                <CatalogoRow2 img={pa10} />
+                <CatalogoRow img={pa1} />
+                <CatalogoRow img={pa2} />
+                <CatalogoRow img={pa3} />
+                <CatalogoRow img={pa4} />
+                <CatalogoRow img={pa5} />
+                <CatalogoRow img={pa6} />
+                <CatalogoRow img={pa7} />
+                <CatalogoRow img={pa8} />
+                <CatalogoRow img={pa9} />
+                <CatalogoRow img={pa10} />
+                <CatalogoRow img={pa11} />
+                <CatalogoRow img={pa12} />
+                <CatalogoRow img={pa13} />
+                <CatalogoRow img={pa14} />
             </div>
         </div>
     )
 }
+//-----------------------------------------------------
+// Conjunto Largo
+//-----------------------------------------------------
 export function Catalogo3({nome, referencia, desc,}) {
     return (
         <div className="container">
@@ -85,18 +101,20 @@ export function Catalogo3({nome, referencia, desc,}) {
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
-                <CatalogoRow2 img={pb1} />
-                <CatalogoRow2 img={pb2} />
-                <CatalogoRow2 img={pb3} />
-                <CatalogoRow2 img={pb4} />
-                <CatalogoRow2 img={pb5} />
-                <CatalogoRow2 img={pb6} />
-                <CatalogoRow2 img={pb7} />
+                <CatalogoRow img={pb1} />
+                <CatalogoRow img={pb2} />
+                <CatalogoRow img={pb3} />
+                <CatalogoRow img={pb4} />
+                <CatalogoRow img={pb5} />
+                <CatalogoRow img={pb6} />
+                <CatalogoRow img={pb7} />
+                <CatalogoRow img={pb8} />
+                <CatalogoRow img={pb9} />
             </div>
         </div>
     )
 }
-export function CatalogoRow2({img, img2, img3, img4}) {
+export function CatalogoRow({img, img2, img3, img4}) {
 
     return (
         <div className="row">
