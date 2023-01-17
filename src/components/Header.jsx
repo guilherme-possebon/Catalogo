@@ -1,11 +1,9 @@
 import "./header.css"
-import face from "/logo-facebook.jpg"
-import insta from "/logo-instagram.jpg"
-import whats from "/whats.png"
 import logo from "/Logo_Majo.png"
-import map from "/maps.png"
+import { FaFacebookSquare, FaWhatsappSquare, FaMapMarkedAlt, FaInstagramSquare } from "react-icons/fa";
 
 export function Header() {
+    const style = { color: "white" ,fontSize: "2em", marginRight: '5px' }
     return (
             <div>
                 <header>
@@ -15,10 +13,10 @@ export function Header() {
                 <nav>
                     <div className="headerContainer">
                         <ul className="ul">
-                            <li><a href="https://pt-br.facebook.com/majoconfeccoes.com.br" target="blank_" ><img src={face} alt="" className="facebook" /></a></li>
-                            <li><a href="https://www.instagram.com/majo_confeccoes/" target="blank_" ><img src={insta} alt="" className="instagram" /></a></li>
-                            <li><a href="https://wa.me/5199126623" target="blank_" className="whatsa"><img src={whats} alt="" className="whats" /></a></li>
-                            <li><a href="https://goo.gl/maps/zyS6tmxKhtrXQUCm9" target="blank_"><img src={map} alt="" className="maps" /></a></li>
+                            <li><a href="https://pt-br.facebook.com/majoconfeccoes.com.br" target="blank_" ><FaFacebookSquare style={style}/></a></li>
+                            <li><a href="https://www.instagram.com/majo_confeccoes/" target="blank_" ><FaInstagramSquare style={style}/></a></li>
+                            <li><a href="https://wa.me/5199126623" target="blank_"><FaWhatsappSquare style={style}/></a></li>
+                            <li><a href="https://goo.gl/maps/zyS6tmxKhtrXQUCm9" target="blank_"><FaMapMarkedAlt style={style}/></a></li>
                         </ul>
                         {/* <input type="search" /> */}
                     </div>

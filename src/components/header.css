@@ -1,10 +1,9 @@
 header {
     padding: 60px;
-    background-color: gray;
+    background-color: #242424e2;
 }
 nav {
-    /* margin-bottom: 30px; */
-    background-color: gray;
+    background-color: #242424e2;
 }
 .headerContainer {
     max-width: 1100px;
@@ -28,11 +27,7 @@ input {
 
     position: absolute;
 } 
- .facebook, .instagram, .whats, .maps {
-    max-width: 32px;
-    border-radius: 100%;
-    margin-left: 5px;
-}
+
 
 
 @media screen and (max-width: 800px ) {
