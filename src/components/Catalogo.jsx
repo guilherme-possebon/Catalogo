@@ -49,12 +49,12 @@ export function Catalogo({nome, referencia, desc,}) {
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
-                <CatalogoRow img={n2} cor={"Manga rosa"}/>
+                <CatalogoRow img={n2} cor={"Detalhe interno da peça"}/>
                 <CatalogoRow img={n4} cor={"Rosa"}/>
-                <CatalogoRow img={n3} cor={"Azul-bebê"}/>
+                <CatalogoRow img={n3} cor={"Azul-Bebê"}/>
                 <CatalogoRow img={n5} cor={"Preto"}/>
                 <CatalogoRow img={n6} cor={"Bordô"}/>
-                <CatalogoRow img={n7} cor={"Marrom"}/>
+                <CatalogoRow img={n7} cor={"Rosa Escuro"}/>
                 <CatalogoRow img={n8} cor={"Marinho"}/>
             </div>
         </div>
