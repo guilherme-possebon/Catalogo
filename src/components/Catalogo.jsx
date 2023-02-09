@@ -184,7 +184,10 @@ export function Catalogo5({nome, referencia}) {
         <div className="container">
 
             <h1 className="h1Nome">{nome}</h1>
-            <p>Disponiveis nos tamanhos: P, M, G, GG.</p>
+            <p>
+                Disponiveis nos tamanhos: P, M, G, GG; <br />
+                Alça removível.
+            </p>
 
             <p className="pReferencia">{referencia}</p>
 
