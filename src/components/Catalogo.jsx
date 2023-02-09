@@ -10,6 +10,8 @@ import n5 from "/5.png"
 import n6 from "/6.png"
 import n7 from "/7.png"
 import n8 from "/8.png"
+
+
 import pa1 from "/PastaA1.jpeg"
 import pa2 from "/PastaA2.jpeg"
 import pa3 from "/PastaA3.jpeg"
@@ -36,6 +38,43 @@ import pb7 from "/PastaB7.jpeg"
 import pb8 from "/PastaB8.jpeg"
 import pb9 from "/PastaB9.jpeg"
 
+import tc1 from "/tc1.jpg"
+import tc2 from "/tc2.jpg"
+
+import cp1 from "/cp1.jpg"
+import cp2 from "/cp2.jpg"
+import cp3 from "/cp3.jpg"
+import cp4 from "/cp4.jpg"
+import cp5 from "/cp5.jpg"
+import cp6 from "/cp6.jpg"
+import cp7 from "/cp7.jpg"
+
+export function Catalogo4({nome, referencia}) {
+    return (
+        <div className="container">
+
+            <h1 className="h1Nome">{nome}</h1>
+            <ul>
+                <li>Conjuntos em mircrofibra, 90% poliamida e 10% elastano;</li>
+                <li>Opções: Liso, meia renda, e renda;</li>
+                <li>Disponiveis nos tamanhos: M, G, GG.</li>
+            </ul>
+            <p className="pReferencia">{referencia}</p>
+
+            <div className="smallContainer">
+                <CatalogoRow img={tc1} cor={"Tomara que caia (Branco)"} />
+                <CatalogoRow img={tc2} cor={"Tomara que caia (Preto)"} />
+                <CatalogoRow img={cp1} cor={"Cropped (Rosa)"} />
+                <CatalogoRow img={cp2} cor={"Cropped (Roxo)"} />
+                <CatalogoRow img={cp3} cor={"Cropped (Bege)"} />
+                <CatalogoRow img={cp4} cor={"Cropped (Vermelho)"} />
+                <CatalogoRow img={cp5} cor={"Cropped (Romance)"} />
+                <CatalogoRow img={cp6} cor={"Cropped (Branco)"} />
+                <CatalogoRow img={cp7} cor={"Cropped (Preto)"} />
+            </div>
+        </div>
+    )
+}
 //-----------------------------------------------------
 // Blusas femininas
 //-----------------------------------------------------
@@ -60,10 +99,14 @@ export function Catalogo({nome, referencia, desc,}) {
         </div>
     )
 }
+
+
 //-----------------------------------------------------
 // Conjunto Normal
 //-----------------------------------------------------
-export function Catalogo2({nome, referencia, desc,}) {
+
+
+export function Catalogo2({nome, referencia}) {
     return (
         <div className="container">
 
@@ -94,10 +137,14 @@ export function Catalogo2({nome, referencia, desc,}) {
         </div>
     )
 }
+
+
 //-----------------------------------------------------
 // Conjunto Largo
 //-----------------------------------------------------
-export function Catalogo3({nome, referencia, desc,}) {
+
+
+export function Catalogo3({nome, referencia}) {
     return (
         <div className="container">
 
@@ -123,7 +170,19 @@ export function Catalogo3({nome, referencia, desc,}) {
         </div>
     )
 }
-export function CatalogoRow({img, img2, img3, img4,cor}) {
+
+//-----------------------------------------------------
+// 
+//-----------------------------------------------------
+
+
+
+//-----------------------------------------------------
+// 
+//-----------------------------------------------------
+
+
+export function CatalogoRow({img, cor}) {
 
     return (
         <div className="row">

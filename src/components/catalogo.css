@@ -17,24 +17,20 @@
     position: absolute;
 }
 .h1Nome {
-    /* color: red; */
     position: absolute;
     top: -30px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     font-size: 1.1rem;
-    /* font-variant: small-caps; */
 }
 .pReferencia {
-    /* color: blue; */
     position: absolute;
     top: 185px;
     left: 250px;
     font-size: .7rem;
 }
 .pDesc {
-    /* color: purple; */
     position: absolute;
     top: 50px;
     left: 145px;
