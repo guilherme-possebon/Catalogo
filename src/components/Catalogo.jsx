@@ -55,22 +55,37 @@ export function Catalogo4({nome, referencia}) {
 
             <h1 className="h1Nome">{nome}</h1>
             <ul>
-                <li>Conjuntos em mircrofibra, 90% poliamida e 10% elastano;</li>
-                <li>Opções: Liso, meia renda, e renda;</li>
-                <li>Disponiveis nos tamanhos: M, G, GG.</li>
+                <li>Conjuntos de renda poliamida;</li>
+                <li>Disponiveis nos tamanhos: P, M, G, GG.</li>
             </ul>
             <p className="pReferencia">{referencia}</p>
 
-            <div className="smallContainer">
-                <CatalogoRow img={tc1} cor={"Tomara que caia (Branco)"} />
-                <CatalogoRow img={tc2} cor={"Tomara que caia (Preto)"} />
-                <CatalogoRow img={cp1} cor={"Cropped (Rosa)"} />
-                <CatalogoRow img={cp2} cor={"Cropped (Roxo)"} />
-                <CatalogoRow img={cp3} cor={"Cropped (Bege)"} />
-                <CatalogoRow img={cp4} cor={"Cropped (Vermelho)"} />
-                <CatalogoRow img={cp5} cor={"Cropped (Romance)"} />
+            <div className="smallContainer">    
+                <CatalogoRow img={cp1} cor={"Cropped (Corsandia)"} />
+                <CatalogoRow img={cp2} cor={"Cropped (Fantástico)"} />
+                <CatalogoRow img={cp3} cor={"Cropped (Romance)"} />
+                <CatalogoRow img={cp4} cor={"Cropped (Rubi)"} />
+                <CatalogoRow img={cp5} cor={"Cropped (ZigZag)"} />
                 <CatalogoRow img={cp6} cor={"Cropped (Branco)"} />
                 <CatalogoRow img={cp7} cor={"Cropped (Preto)"} />
+            </div>
+        </div>
+    )
+}
+export function Catalogo5({nome, referencia}) {
+    return (
+        <div className="container">
+
+            <h1 className="h1Nome">{nome}</h1>
+            <ul>
+                <li>Conjuntos de renda poliamida;</li>
+                <li>Disponiveis nos tamanhos: P, M, G, GG.</li>
+            </ul>
+            <p className="pReferencia">{referencia}</p>
+
+            <div className="smallContainer">    
+                <CatalogoRow img={tc1} cor={"Tomara que caia (Branco)"} />
+                <CatalogoRow img={tc2} cor={"Tomara que caia (Preto)"} />
             </div>
         </div>
     )
