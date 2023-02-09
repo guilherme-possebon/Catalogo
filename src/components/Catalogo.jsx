@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./catalogo2.css"
 
 
@@ -26,6 +24,9 @@ import pa11 from "/PastaA11.jpeg"
 import pa12 from "/PastaA12.jpeg"
 import pa13 from "/PastaA13.jpeg"
 import pa14 from "/PastaA14.jpeg"
+import pa15 from "/PastaA15.jpg"
+import pa16 from "/PastaA16.jpg"
+import pa17 from "/PastaA17.jpg"
 
 
 import pb1 from "/PastaB1.jpeg"
@@ -49,47 +50,6 @@ import cp5 from "/cp5.jpg"
 import cp6 from "/cp6.jpg"
 import cp7 from "/cp7.jpg"
 
-export function Catalogo4({nome, referencia}) {
-    return (
-        <div className="container">
-
-            <h1 className="h1Nome">{nome}</h1>
-            <ul>
-                <li>Conjuntos de renda poliamida;</li>
-                <li>Disponiveis nos tamanhos: P, M, G, GG.</li>
-            </ul>
-            <p className="pReferencia">{referencia}</p>
-
-            <div className="smallContainer">    
-                <CatalogoRow img={cp1} cor={"Cropped (Corsandia)"} />
-                <CatalogoRow img={cp2} cor={"Cropped (Fantástico)"} />
-                <CatalogoRow img={cp3} cor={"Cropped (Romance)"} />
-                <CatalogoRow img={cp4} cor={"Cropped (Rubi)"} />
-                <CatalogoRow img={cp5} cor={"Cropped (ZigZag)"} />
-                <CatalogoRow img={cp6} cor={"Cropped (Branco)"} />
-                <CatalogoRow img={cp7} cor={"Cropped (Preto)"} />
-            </div>
-        </div>
-    )
-}
-export function Catalogo5({nome, referencia}) {
-    return (
-        <div className="container">
-
-            <h1 className="h1Nome">{nome}</h1>
-            <ul>
-                <li>Conjuntos de renda poliamida;</li>
-                <li>Disponiveis nos tamanhos: P, M, G, GG.</li>
-            </ul>
-            <p className="pReferencia">{referencia}</p>
-
-            <div className="smallContainer">    
-                <CatalogoRow img={tc1} cor={"Tomara que caia (Branco)"} />
-                <CatalogoRow img={tc2} cor={"Tomara que caia (Preto)"} />
-            </div>
-        </div>
-    )
-}
 //-----------------------------------------------------
 // Blusas femininas
 //-----------------------------------------------------
@@ -124,13 +84,11 @@ export function Catalogo({nome, referencia, desc,}) {
 export function Catalogo2({nome, referencia}) {
     return (
         <div className="container">
-
+            
             <h1 className="h1Nome">{nome}</h1>
-            <ul>
-                <li>Conjuntos em mircrofibra, 90% poliamida e 10% elastano;</li>
-                <li>Opções: Liso, meia renda, e renda;</li>
-                <li>Disponiveis nos tamanhos: P, M, G, GG.</li>
-            </ul>
+                <p>Conjuntos em mircrofibra, 90% poliamida e 10% elastano; <br />
+                    Opções: Liso, meia renda, e renda;  <br />
+                    Disponiveis nos tamanhos: P, M, G, GG.</p>
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
@@ -148,6 +106,9 @@ export function Catalogo2({nome, referencia}) {
                 <CatalogoRow img={pa13} cor={"Sandia (Renda)"} />
                 <CatalogoRow img={pa14} cor={"Preto (Renda)"} />
                 <CatalogoRow img={pa1} cor={"Fantástico (Renda)"} />
+                <CatalogoRow img={pa15} cor={"Azulejo (Renda)"} />
+                <CatalogoRow img={pa16} cor={"Odalisca (Renda)"} />
+                <CatalogoRow img={pa17} cor={"Zig zag (Renda)"} />
             </div>
         </div>
     )
@@ -164,11 +125,11 @@ export function Catalogo3({nome, referencia}) {
         <div className="container">
 
             <h1 className="h1Nome">{nome}</h1>
-            <ul>
-                <li>Conjuntos em mircrofibra, 90% poliamida e 10% elastano;</li>
-                <li>Opções: Liso, meia renda, e renda;</li>
-                <li>Disponiveis nos tamanhos: M, G, GG.</li>
-            </ul>
+
+                <p>Conjuntos em mircrofibra, 90% poliamida e 10% elastano; <br />
+                Opções: Liso, meia renda, e renda; <br />
+                Disponiveis nos tamanhos: M, G, GG.</p>
+
             <p className="pReferencia">{referencia}</p>
 
             <div className="smallContainer">
@@ -190,7 +151,50 @@ export function Catalogo3({nome, referencia}) {
 // 
 //-----------------------------------------------------
 
+export function Catalogo4({nome, referencia}) {
+    return (
+        <div className="container">
 
+            <h1 className="h1Nome">{nome}</h1>
+
+                <p>Conjuntos de renda poliamida; <br />
+                Disponiveis nos tamanhos: P, M, G, GG.</p>
+
+            <p className="pReferencia">{referencia}</p>
+
+            <div className="smallContainer">    
+                <CatalogoRow img={cp1} cor={"Cropped (Corsandia)"} />
+                <CatalogoRow img={cp2} cor={"Cropped (Fantástico)"} />
+                <CatalogoRow img={cp3} cor={"Cropped (Romance)"} />
+                <CatalogoRow img={cp4} cor={"Cropped (Rubi)"} />
+                <CatalogoRow img={cp5} cor={"Cropped (ZigZag)"} />
+                <CatalogoRow img={cp6} cor={"Cropped (Branco)"} />
+                <CatalogoRow img={cp7} cor={"Cropped (Preto)"} />
+            </div>
+        </div>
+    )
+}
+
+//-----------------------------------------------------
+// 
+//-----------------------------------------------------
+
+export function Catalogo5({nome, referencia}) {
+    return (
+        <div className="container">
+
+            <h1 className="h1Nome">{nome}</h1>
+            <p>Disponiveis nos tamanhos: P, M, G, GG.</p>
+
+            <p className="pReferencia">{referencia}</p>
+
+            <div className="smallContainer">    
+                <CatalogoRow img={tc1} cor={"Tomara que caia (Branco)"} />
+                <CatalogoRow img={tc2} cor={"Tomara que caia (Preto)"} />
+            </div>
+        </div>
+    )
+}
 
 //-----------------------------------------------------
 // 
@@ -198,7 +202,7 @@ export function Catalogo3({nome, referencia}) {
 
 
 export function CatalogoRow({img, cor}) {
-
+    
     return (
         <div className="row">
             <div className="col">
